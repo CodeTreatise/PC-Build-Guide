@@ -1,0 +1,4988 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive PC Building Guide for Indian Market">
+      
+      
+        <meta name="author" content="CodeTreatise">
+      
+      
+        <link rel="canonical" href="https://codetreatise.github.io/PC-Build-Guide/guides/embedded-guide/">
+      
+      
+        <link rel="prev" href="../blockchain-guide/">
+      
+      
+        <link rel="next" href="../../builds/budget-builds/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Embedded & Mini PCs - PC Build Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#embedded-computing-mini-pc-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PC Build Guide" class="md-header__button md-logo" aria-label="PC Build Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PC Build Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Embedded & Mini PCs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CodeTreatise/PC-Build-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CodeTreatise/PC-Build-Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../motherboard-guide/" class="md-tabs__link">
+          
+  
+  
+  Component Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../builds/budget-builds/" class="md-tabs__link">
+          
+  
+  
+  Build Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../assembly/build-guide/" class="md-tabs__link">
+          
+  
+  
+  Assembly & Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../compatibility/compatibility-matrix/" class="md-tabs__link">
+          
+  
+  
+  Reference & Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/common-issues/" class="md-tabs__link">
+          
+  
+  
+  Troubleshooting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../external/advanced-resources/" class="md-tabs__link">
+          
+  
+  
+  External References
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PC Build Guide" class="md-nav__button md-logo" aria-label="PC Build Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PC Build Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CodeTreatise/PC-Build-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CodeTreatise/PC-Build-Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Component Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Component Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motherboard-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Motherboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Processor (CPU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gpu-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphics Card (GPU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ram-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory (RAM)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psu-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power Supply
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PC Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cooling-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cooling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitor-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../peripherals-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keyboards & Mice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-ml-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI/ML Builds
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blockchain-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blockchain & Crypto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Embedded & Mini PCs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Embedded & Mini PCs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-computing-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Embedded Computing Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Embedded Computing Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-embedded-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Embedded Computing?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-applications-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Applications in India
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-board-computers-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🍓 Single Board Computers (SBCs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🍓 Single Board Computers (SBCs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-ecosystem-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Ecosystem (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Ecosystem (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-5-latest-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 5 (Latest - 2024)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4-model-b-mainstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4 Model B (Mainstream)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-zero-2-w-ultra-compact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Zero 2 W (Ultra-Compact)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-sbcs-indian-market" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative SBCs (Indian Market)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternative SBCs (Indian Market)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orange-pi-5-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orange Pi 5 Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rock-pi-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rock Pi Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-jetson-aiml-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA Jetson (AI/ML Focus)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-pcs-compact-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Mini PCs &amp; Compact Computing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Mini PCs &amp; Compact Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-series-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC Series (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Intel NUC Series (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-13-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC 13 Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-12-enthusiast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC 12 Enthusiast
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amd-mini-pc-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      AMD Mini PC Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AMD Mini PC Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asus-pn-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASUS PN Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beelink-mini-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beelink Mini PCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-specialized-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏭 Industrial &amp; Specialized Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏭 Industrial &amp; Specialized Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#industrial-single-board-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Single Board Computers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial Single Board Computers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantech-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantech Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kontron-embedded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kontron Embedded
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fanless-industrial-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fanless Industrial PCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fanless Industrial PCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#axiomtek-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axiomtek Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-boards-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Development Boards &amp; Prototyping
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Development Boards &amp; Prototyping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arduino Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-boards-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino Boards (2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-development-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Development Boards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stm32-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      STM32 Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="STM32 Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stm32-discovery-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      STM32 Discovery Boards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-for-embedded-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Storage for Embedded Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Storage for Embedded Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsd-cards-primary-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      microSD Cards (Primary Storage)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="microSD Cards (Primary Storage)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-endurance-cards-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Endurance Cards (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emmc-storage-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      eMMC Storage (Performance)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvme-ssds-high-end-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVMe SSDs (High-End SBCs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔌 Power Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Power Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-requirements-by-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Requirements by Device
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Requirements by Device">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-power-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Power Needs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-pc-power-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC Power Consumption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Battery Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-banks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable Power Banks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ups-solutions-for-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      UPS Solutions for SBCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connectivity-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      📡 Connectivity &amp; Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📡 Connectivity &amp; Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifibluetooth-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiFi/Bluetooth Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellular-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cellular Connectivity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environmental-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environmental Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion &amp; Position
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-system-build-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Embedded System Build Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Embedded System Build Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-weather-station-15000" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Weather Station (₹15,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-home-automation-hub-25000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Home Automation Hub (₹25,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-edge-ai-system-75000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Edge AI System (₹75,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#educational-robotics-platform-35000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Robotics Platform (₹35,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-signage-system-45000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Signage System (₹45,000)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Software Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Software Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operating Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi OS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-linux-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Linux Distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Operating Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iot-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Platforms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IoT Platforms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Platforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Platforms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-comparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Performance Comparisons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Performance Comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sbc-performance-benchmarks-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      SBC Performance Benchmarks (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SBC Performance Benchmarks (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpu-performance-geekbench-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU Performance (Geekbench 5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-inference-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Inference Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-per-watt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance per Watt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-buy-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛒 Where to Buy in India
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛒 Where to Buy in India">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorized-distributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorized Distributors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorized Distributors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-official" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Official
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-retailers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Retailers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-marketplaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Marketplaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-suppliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Suppliers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Common Mistakes &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Common Mistakes &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reliability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-trends-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Future Trends &amp; Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Future Trends &amp; Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Evolution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#market-trends-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Market Trends in India
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emerging-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emerging Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-selection-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Quick Selection Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Quick Selection Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-by-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choose by Application
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose by Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-education" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning &amp; Education
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Automation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial IoT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiml-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI/ML Edge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compact-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compact Desktop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Build Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Build Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/budget-builds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Complete Build Recommendations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Assembly & Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Assembly & Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assembly/build-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Step-by-Step Build Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reference & Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference & Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compatibility/compatibility-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Component Compatibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frequently Asked Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/terminology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PC Building Terminology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/common-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Common Issues & Solutions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    External References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            External References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/advanced-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Learning Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/video-tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Video Tutorials & Channels
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/technical-articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Articles & Research
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/communities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communities & Forums
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/review-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Professional Reviews & Benchmarks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-computing-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Embedded Computing Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Embedded Computing Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-embedded-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Embedded Computing?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-applications-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Applications in India
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-board-computers-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🍓 Single Board Computers (SBCs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🍓 Single Board Computers (SBCs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-ecosystem-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Ecosystem (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Ecosystem (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-5-latest-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 5 (Latest - 2024)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4-model-b-mainstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4 Model B (Mainstream)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-zero-2-w-ultra-compact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Zero 2 W (Ultra-Compact)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-sbcs-indian-market" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative SBCs (Indian Market)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternative SBCs (Indian Market)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orange-pi-5-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orange Pi 5 Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rock-pi-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rock Pi Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-jetson-aiml-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA Jetson (AI/ML Focus)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-pcs-compact-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Mini PCs &amp; Compact Computing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Mini PCs &amp; Compact Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-series-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC Series (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Intel NUC Series (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-13-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC 13 Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intel-nuc-12-enthusiast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel NUC 12 Enthusiast
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amd-mini-pc-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      AMD Mini PC Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AMD Mini PC Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asus-pn-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASUS PN Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beelink-mini-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beelink Mini PCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#industrial-specialized-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏭 Industrial &amp; Specialized Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏭 Industrial &amp; Specialized Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#industrial-single-board-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Single Board Computers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Industrial Single Board Computers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantech-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantech Series
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kontron-embedded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kontron Embedded
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fanless-industrial-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fanless Industrial PCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fanless Industrial PCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#axiomtek-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axiomtek Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-boards-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Development Boards &amp; Prototyping
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Development Boards &amp; Prototyping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arduino Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-boards-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino Boards (2025)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-development-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Development Boards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stm32-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      STM32 Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="STM32 Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stm32-discovery-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      STM32 Discovery Boards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-for-embedded-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Storage for Embedded Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Storage for Embedded Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsd-cards-primary-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      microSD Cards (Primary Storage)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="microSD Cards (Primary Storage)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-endurance-cards-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Endurance Cards (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emmc-storage-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      eMMC Storage (Performance)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvme-ssds-high-end-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVMe SSDs (High-End SBCs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔌 Power Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Power Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-requirements-by-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Requirements by Device
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Requirements by Device">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-power-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Power Needs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-pc-power-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC Power Consumption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Battery Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-banks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable Power Banks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ups-solutions-for-sbcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      UPS Solutions for SBCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connectivity-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      📡 Connectivity &amp; Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📡 Connectivity &amp; Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifibluetooth-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiFi/Bluetooth Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellular-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cellular Connectivity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environmental-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environmental Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion &amp; Position
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-system-build-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Embedded System Build Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Embedded System Build Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-weather-station-15000" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Weather Station (₹15,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-home-automation-hub-25000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Home Automation Hub (₹25,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-edge-ai-system-75000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Edge AI System (₹75,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#educational-robotics-platform-35000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Robotics Platform (₹35,000)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-signage-system-45000" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Signage System (₹45,000)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Software Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Software Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operating Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi OS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-linux-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Linux Distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-Time Operating Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iot-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Platforms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IoT Platforms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Platforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Platforms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-comparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Performance Comparisons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Performance Comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sbc-performance-benchmarks-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      SBC Performance Benchmarks (2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SBC Performance Benchmarks (2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpu-performance-geekbench-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU Performance (Geekbench 5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-inference-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Inference Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-per-watt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance per Watt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-buy-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛒 Where to Buy in India
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛒 Where to Buy in India">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorized-distributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorized Distributors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorized Distributors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-official" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Official
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-retailers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Retailers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-marketplaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Marketplaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-suppliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Suppliers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Common Mistakes &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Common Mistakes &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Mistakes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reliability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-trends-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Future Trends &amp; Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Future Trends &amp; Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Evolution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#market-trends-in-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Market Trends in India
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emerging-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emerging Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-selection-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Quick Selection Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Quick Selection Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-by-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choose by Application
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose by Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-education" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning &amp; Education
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Automation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial IoT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiml-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI/ML Edge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compact-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compact Desktop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="embedded-computing-mini-pc-guide">Embedded Computing &amp; Mini PC Guide</h1>
+<h2 id="embedded-computing-systems">🔧 Embedded Computing Systems</h2>
+<h3 id="what-is-embedded-computing"><strong>What is Embedded Computing?</strong></h3>
+<p>Embedded computing involves specialized, compact computer systems designed for specific tasks:
+- <strong>Single Board Computers (SBCs)</strong>: Complete computers on a single board
+- <strong>Development Boards</strong>: Prototyping and learning platforms
+- <strong>Mini PCs</strong>: Compact desktop computer alternatives
+- <strong>Industrial Computers</strong>: Ruggedized systems for harsh environments
+- <strong>IoT Devices</strong>: Internet-connected sensors and controllers
+- <strong>Edge Computing</strong>: Local processing for AI and real-time applications</p>
+<h3 id="key-applications-in-india"><strong>Key Applications in India</strong></h3>
+<ul>
+<li><strong>Smart Agriculture</strong>: Crop monitoring, irrigation automation</li>
+<li><strong>Home Automation</strong>: IoT-based smart home systems</li>
+<li><strong>Industrial IoT</strong>: Factory automation, predictive maintenance</li>
+<li><strong>Educational Projects</strong>: Engineering colleges, maker spaces</li>
+<li><strong>Digital Signage</strong>: Retail displays, information kiosks</li>
+<li><strong>Security Systems</strong>: CCTV processing, access control</li>
+<li><strong>Weather Stations</strong>: Environmental monitoring networks</li>
+<li><strong>Edge AI</strong>: Local machine learning inference</li>
+</ul>
+<hr />
+<h2 id="single-board-computers-sbcs">🍓 Single Board Computers (SBCs)</h2>
+<h3 id="raspberry-pi-ecosystem-2025"><strong>Raspberry Pi Ecosystem (2025)</strong></h3>
+<h4 id="raspberry-pi-5-latest-2024"><strong>Raspberry Pi 5 (Latest - 2024)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+<th>Price (India)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPU</strong></td>
+<td>Quad-core ARM Cortex-A76 2.4GHz</td>
+<td>₹6,500-9,500</td>
+<td>AI projects, desktop use</td>
+</tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td>4GB/8GB LPDDR4X</td>
+<td>(4GB/8GB variants)</td>
+<td>General computing</td>
+</tr>
+<tr>
+<td><strong>GPU</strong></td>
+<td>VideoCore VII</td>
+<td>Included</td>
+<td>4K video, light gaming</td>
+</tr>
+<tr>
+<td><strong>Connectivity</strong></td>
+<td>WiFi 6, Bluetooth 5.0</td>
+<td>Included</td>
+<td>IoT applications</td>
+</tr>
+<tr>
+<td><strong>Ports</strong></td>
+<td>2x USB 3.0, 2x USB 2.0</td>
+<td>Included</td>
+<td>Peripheral connectivity</td>
+</tr>
+</tbody>
+</table>
+<h4 id="raspberry-pi-4-model-b-mainstream"><strong>Raspberry Pi 4 Model B (Mainstream)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+<th>Price (India)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPU</strong></td>
+<td>Quad-core ARM Cortex-A72 1.8GHz</td>
+<td>₹4,500-7,500</td>
+<td>Most projects</td>
+</tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td>2GB/4GB/8GB LPDDR4</td>
+<td>(variants available)</td>
+<td>Varies by use case</td>
+</tr>
+<tr>
+<td><strong>GPU</strong></td>
+<td>VideoCore VI</td>
+<td>Included</td>
+<td>1080p/4K video</td>
+</tr>
+<tr>
+<td><strong>Connectivity</strong></td>
+<td>WiFi 5, Bluetooth 5.0</td>
+<td>Included</td>
+<td>Standard IoT</td>
+</tr>
+</tbody>
+</table>
+<h4 id="raspberry-pi-zero-2-w-ultra-compact"><strong>Raspberry Pi Zero 2 W (Ultra-Compact)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+<th>Price (India)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPU</strong></td>
+<td>Quad-core ARM Cortex-A53 1GHz</td>
+<td>₹2,000</td>
+<td>Embedded projects</td>
+</tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td>512MB LPDDR2</td>
+<td>Included</td>
+<td>Simple IoT sensors</td>
+</tr>
+<tr>
+<td><strong>Size</strong></td>
+<td>65mm × 30mm</td>
+<td>Ultra-compact</td>
+<td>Wearable devices</td>
+</tr>
+<tr>
+<td><strong>Power</strong></td>
+<td>2.5W typical</td>
+<td>Very low</td>
+<td>Battery projects</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alternative-sbcs-indian-market"><strong>Alternative SBCs (Indian Market)</strong></h3>
+<h4 id="orange-pi-5-series"><strong>Orange Pi 5 Series</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>RAM</th>
+<th>Price (₹)</th>
+<th>Advantage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orange Pi 5</td>
+<td>RK3588S 8-core</td>
+<td>4/8/16/32GB</td>
+<td>8,000-15,000</td>
+<td>High performance</td>
+</tr>
+<tr>
+<td>Orange Pi 5B</td>
+<td>RK3588S 8-core</td>
+<td>4/8/16GB</td>
+<td>9,000-13,000</td>
+<td>Better cooling</td>
+</tr>
+<tr>
+<td>Orange Pi 5 Plus</td>
+<td>RK3588 8-core</td>
+<td>4/8/16/32GB</td>
+<td>12,000-20,000</td>
+<td>Maximum power</td>
+</tr>
+</tbody>
+</table>
+<h4 id="rock-pi-series"><strong>Rock Pi Series</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>RAM</th>
+<th>Price (₹)</th>
+<th>Specialty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rock Pi 4C+</td>
+<td>RK3399 6-core</td>
+<td>1/2/4GB</td>
+<td>6,000-9,000</td>
+<td>AI acceleration</td>
+</tr>
+<tr>
+<td>Rock Pi X</td>
+<td>Intel x86</td>
+<td>2/4/8GB</td>
+<td>12,000-18,000</td>
+<td>x86 compatibility</td>
+</tr>
+<tr>
+<td>Rock Pi S</td>
+<td>RK3308 4-core</td>
+<td>256/512MB</td>
+<td>2,500-3,500</td>
+<td>Audio processing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nvidia-jetson-aiml-focus"><strong>NVIDIA Jetson (AI/ML Focus)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>GPU</th>
+<th>RAM</th>
+<th>Price (₹)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jetson Nano</td>
+<td>ARM A57 4-core</td>
+<td>128 CUDA cores</td>
+<td>4GB</td>
+<td>15,000</td>
+<td>Entry AI</td>
+</tr>
+<tr>
+<td>Jetson Xavier NX</td>
+<td>ARM Carmel 6-core</td>
+<td>384 CUDA cores</td>
+<td>8GB</td>
+<td>45,000</td>
+<td>Advanced AI</td>
+</tr>
+<tr>
+<td>Jetson Orin Nano</td>
+<td>ARM Cortex-A78AE</td>
+<td>1024 CUDA cores</td>
+<td>8GB</td>
+<td>65,000</td>
+<td>Professional AI</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="mini-pcs-compact-computing">💻 Mini PCs &amp; Compact Computing</h2>
+<h3 id="intel-nuc-series-2025"><strong>Intel NUC Series (2025)</strong></h3>
+<h4 id="intel-nuc-13-pro"><strong>Intel NUC 13 Pro</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>Price Range (₹)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUC13ANHi3</td>
+<td>i3-1315U</td>
+<td>35,000-45,000</td>
+<td>Basic computing</td>
+</tr>
+<tr>
+<td>NUC13ANHi5</td>
+<td>i5-1335U</td>
+<td>55,000-70,000</td>
+<td>General purpose</td>
+</tr>
+<tr>
+<td>NUC13ANHi7</td>
+<td>i7-1355U</td>
+<td>75,000-95,000</td>
+<td>High performance</td>
+</tr>
+</tbody>
+</table>
+<h4 id="intel-nuc-12-enthusiast"><strong>Intel NUC 12 Enthusiast</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>GPU</th>
+<th>Price (₹)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUC12SNKi72</td>
+<td>i7-12700H</td>
+<td>Arc A770M</td>
+<td>1,20,000+</td>
+<td>Gaming HTPC</td>
+</tr>
+<tr>
+<td>NUC12DCMi9</td>
+<td>i9-12900</td>
+<td>Discrete ready</td>
+<td>95,000+</td>
+<td>Workstation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="amd-mini-pc-options"><strong>AMD Mini PC Options</strong></h3>
+<h4 id="asus-pn-series"><strong>ASUS PN Series</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>RAM</th>
+<th>Price (₹)</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PN53</td>
+<td>Ryzen 7 5700U</td>
+<td>8-32GB</td>
+<td>55,000-85,000</td>
+<td>Office/Media</td>
+</tr>
+<tr>
+<td>PN64</td>
+<td>Ryzen 9 6900HX</td>
+<td>16-64GB</td>
+<td>85,000-1,25,000</td>
+<td>Performance</td>
+</tr>
+</tbody>
+</table>
+<h4 id="beelink-mini-pcs"><strong>Beelink Mini PCs</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>RAM</th>
+<th>Price (₹)</th>
+<th>Target Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SER5 Max</td>
+<td>Ryzen 7 5800H</td>
+<td>16-32GB</td>
+<td>45,000-65,000</td>
+<td>Home office</td>
+</tr>
+<tr>
+<td>GTR6</td>
+<td>Ryzen 9 6900HX</td>
+<td>32GB</td>
+<td>75,000-95,000</td>
+<td>Gaming/Content</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="industrial-specialized-systems">🏭 Industrial &amp; Specialized Systems</h2>
+<h3 id="industrial-single-board-computers"><strong>Industrial Single Board Computers</strong></h3>
+<h4 id="advantech-series"><strong>Advantech Series</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>Operating Temp</th>
+<th>Price (₹)</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSB-3720</td>
+<td>Intel Apollo Lake</td>
+<td>-20°C to +70°C</td>
+<td>25,000+</td>
+<td>Industrial IoT</td>
+</tr>
+<tr>
+<td>RSB-4710</td>
+<td>Intel Tiger Lake</td>
+<td>-20°C to +70°C</td>
+<td>45,000+</td>
+<td>Edge computing</td>
+</tr>
+<tr>
+<td>MIO-2263</td>
+<td>ARM Cortex-A72</td>
+<td>-25°C to +75°C</td>
+<td>35,000+</td>
+<td>Rugged applications</td>
+</tr>
+</tbody>
+</table>
+<h4 id="kontron-embedded"><strong>Kontron Embedded</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>Certifications</th>
+<th>Price (₹)</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SMARC-sAL28</td>
+<td>Intel Atom</td>
+<td>CE, FCC</td>
+<td>30,000+</td>
+<td>Automation</td>
+</tr>
+<tr>
+<td>COMe-bHL7</td>
+<td>Intel Core</td>
+<td>Industrial standards</td>
+<td>55,000+</td>
+<td>Machine vision</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fanless-industrial-pcs"><strong>Fanless Industrial PCs</strong></h3>
+<h4 id="axiomtek-series"><strong>Axiomtek Series</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>I/O Ports</th>
+<th>Price (₹)</th>
+<th>Environment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eBOX560-300</td>
+<td>Intel Celeron</td>
+<td>6x COM, 8x USB</td>
+<td>45,000+</td>
+<td>Factory floor</td>
+</tr>
+<tr>
+<td>ICO300-83C</td>
+<td>Intel Core i7</td>
+<td>Rich I/O expansion</td>
+<td>85,000+</td>
+<td>Control systems</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="development-boards-prototyping">🛠️ Development Boards &amp; Prototyping</h2>
+<h3 id="arduino-ecosystem"><strong>Arduino Ecosystem</strong></h3>
+<h4 id="arduino-boards-2025"><strong>Arduino Boards (2025)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Microcontroller</th>
+<th>Price (₹)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno R4 WiFi</td>
+<td>RA4M1 32-bit</td>
+<td>3,500</td>
+<td>Learning, prototyping</td>
+</tr>
+<tr>
+<td>Arduino Nano 33 IoT</td>
+<td>SAMD21 + ESP32</td>
+<td>4,500</td>
+<td>IoT projects</td>
+</tr>
+<tr>
+<td>Arduino Portenta H7</td>
+<td>STM32H747XI</td>
+<td>12,000</td>
+<td>Professional IoT</td>
+</tr>
+<tr>
+<td>Arduino MKR WiFi 1010</td>
+<td>SAMD21</td>
+<td>5,500</td>
+<td>Connected projects</td>
+</tr>
+</tbody>
+</table>
+<h4 id="esp32-development-boards"><strong>ESP32 Development Boards</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Features</th>
+<th>Price (₹)</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32-DevKitC</td>
+<td>WiFi + Bluetooth</td>
+<td>800-1,200</td>
+<td>IoT prototyping</td>
+</tr>
+<tr>
+<td>ESP32-CAM</td>
+<td>Camera module</td>
+<td>1,500-2,000</td>
+<td>Vision projects</td>
+</tr>
+<tr>
+<td>ESP32-S3</td>
+<td>AI acceleration</td>
+<td>1,800-2,500</td>
+<td>Edge AI</td>
+</tr>
+<tr>
+<td>ESP32-C3</td>
+<td>RISC-V core</td>
+<td>600-1,000</td>
+<td>Cost-sensitive IoT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stm32-development"><strong>STM32 Development</strong></h3>
+<h4 id="stm32-discovery-boards"><strong>STM32 Discovery Boards</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>CPU</th>
+<th>Features</th>
+<th>Price (₹)</th>
+<th>Focus Area</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STM32F407G-DISC1</td>
+<td>ARM Cortex-M4</td>
+<td>Audio, accelerometer</td>
+<td>2,500</td>
+<td>Audio processing</td>
+</tr>
+<tr>
+<td>STM32H747I-DISCO</td>
+<td>Dual-core M7+M4</td>
+<td>LCD, camera</td>
+<td>8,500</td>
+<td>Advanced projects</td>
+</tr>
+<tr>
+<td>STM32MP157F-DK2</td>
+<td>Cortex-A7 + M4</td>
+<td>Linux capable</td>
+<td>12,000</td>
+<td>Embedded Linux</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="storage-for-embedded-systems">💾 Storage for Embedded Systems</h2>
+<h3 id="microsd-cards-primary-storage"><strong>microSD Cards (Primary Storage)</strong></h3>
+<h4 id="high-endurance-cards-recommended"><strong>High-Endurance Cards (Recommended)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Brand</th>
+<th>Capacity</th>
+<th>Speed Class</th>
+<th>Price (₹)</th>
+<th>Endurance Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SanDisk Ultra</td>
+<td>32GB</td>
+<td>Class 10, U1</td>
+<td>800-1,200</td>
+<td>Standard use</td>
+</tr>
+<tr>
+<td>Samsung EVO Select</td>
+<td>64GB</td>
+<td>Class 10, U3</td>
+<td>1,500-2,000</td>
+<td>4K video</td>
+</tr>
+<tr>
+<td>SanDisk High Endurance</td>
+<td>128GB</td>
+<td>Class 10, U3</td>
+<td>3,000-4,000</td>
+<td>Continuous recording</td>
+</tr>
+<tr>
+<td>Transcend 350V</td>
+<td>256GB</td>
+<td>Class 10, U3</td>
+<td>5,000-7,000</td>
+<td>Industrial use</td>
+</tr>
+</tbody>
+</table>
+<h3 id="emmc-storage-performance"><strong>eMMC Storage (Performance)</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Capacity</th>
+<th>Interface</th>
+<th>Price (₹)</th>
+<th>Performance Gain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16GB</td>
+<td>eMMC 5.1</td>
+<td>2,000-3,000</td>
+<td>3-5x faster than SD</td>
+</tr>
+<tr>
+<td>32GB</td>
+<td>eMMC 5.1</td>
+<td>3,500-4,500</td>
+<td>Better random I/O</td>
+</tr>
+<tr>
+<td>64GB</td>
+<td>eMMC 5.1</td>
+<td>6,000-8,000</td>
+<td>Professional use</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nvme-ssds-high-end-sbcs"><strong>NVMe SSDs (High-End SBCs)</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Capacity</th>
+<th>Form Factor</th>
+<th>Price (₹)</th>
+<th>Compatible SBCs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>256GB</td>
+<td>M.2 2280</td>
+<td>3,000-4,000</td>
+<td>Rock Pi X, Some NUCs</td>
+</tr>
+<tr>
+<td>512GB</td>
+<td>M.2 2242</td>
+<td>5,000-7,000</td>
+<td>Mini PCs, Industrial</td>
+</tr>
+<tr>
+<td>1TB</td>
+<td>M.2 2280</td>
+<td>8,000-12,000</td>
+<td>High-performance setups</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="power-solutions">🔌 Power Solutions</h2>
+<h3 id="power-requirements-by-device"><strong>Power Requirements by Device</strong></h3>
+<h4 id="raspberry-pi-power-needs"><strong>Raspberry Pi Power Needs</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Voltage</th>
+<th>Current</th>
+<th>Recommended PSU</th>
+<th>Price (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pi Zero 2 W</td>
+<td>5V</td>
+<td>0.5A</td>
+<td>2.5W USB-C</td>
+<td>500-800</td>
+</tr>
+<tr>
+<td>Pi 4 Model B</td>
+<td>5V</td>
+<td>3A</td>
+<td>15W USB-C</td>
+<td>1,200-1,800</td>
+</tr>
+<tr>
+<td>Pi 5</td>
+<td>5V</td>
+<td>5A</td>
+<td>25W USB-C PD</td>
+<td>2,000-2,500</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mini-pc-power-consumption"><strong>Mini PC Power Consumption</strong></h4>
+<table>
+<thead>
+<tr>
+<th>System Type</th>
+<th>Idle Power</th>
+<th>Load Power</th>
+<th>PSU Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intel NUC i3</td>
+<td>8-12W</td>
+<td>25-35W</td>
+<td>External 65W</td>
+</tr>
+<tr>
+<td>Intel NUC i7</td>
+<td>12-18W</td>
+<td>45-65W</td>
+<td>External 90W</td>
+</tr>
+<tr>
+<td>AMD Mini PC</td>
+<td>10-15W</td>
+<td>35-55W</td>
+<td>External 90W</td>
+</tr>
+</tbody>
+</table>
+<h3 id="battery-solutions"><strong>Battery Solutions</strong></h3>
+<h4 id="portable-power-banks"><strong>Portable Power Banks</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Capacity</th>
+<th>Output</th>
+<th>Price (₹)</th>
+<th>Runtime (Pi 4)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10,000mAh</td>
+<td>5V/3A</td>
+<td>1,500-2,500</td>
+<td>8-12 hours</td>
+</tr>
+<tr>
+<td>20,000mAh</td>
+<td>5V/3A</td>
+<td>2,500-4,000</td>
+<td>16-24 hours</td>
+</tr>
+<tr>
+<td>26,800mAh</td>
+<td>5V/3A</td>
+<td>3,500-5,000</td>
+<td>24-36 hours</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ups-solutions-for-sbcs"><strong>UPS Solutions for SBCs</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Capacity</th>
+<th>Features</th>
+<th>Price (₹)</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PiJuice HAT</td>
+<td>1820mAh</td>
+<td>Pi-specific</td>
+<td>4,500-6,000</td>
+<td>Portable Pi</td>
+</tr>
+<tr>
+<td>Geekworm X728</td>
+<td>18650 cells</td>
+<td>Stackable</td>
+<td>3,000-4,000</td>
+<td>Custom capacity</td>
+</tr>
+<tr>
+<td>Waveshare UPS HAT</td>
+<td>2500mAh</td>
+<td>Real-time clock</td>
+<td>3,500-4,500</td>
+<td>IoT projects</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="connectivity-sensors">📡 Connectivity &amp; Sensors</h2>
+<h3 id="communication-modules"><strong>Communication Modules</strong></h3>
+<h4 id="wifibluetooth-modules"><strong>WiFi/Bluetooth Modules</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Protocol</th>
+<th>Range</th>
+<th>Price (₹)</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP8266</td>
+<td>WiFi 802.11n</td>
+<td>50-100m</td>
+<td>300-500</td>
+<td>Basic IoT</td>
+</tr>
+<tr>
+<td>ESP32</td>
+<td>WiFi + BT 5.0</td>
+<td>100-150m</td>
+<td>800-1,200</td>
+<td>Advanced IoT</td>
+</tr>
+<tr>
+<td>nRF52840</td>
+<td>Bluetooth 5.0</td>
+<td>200m+</td>
+<td>2,000-3,000</td>
+<td>Mesh networks</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cellular-connectivity"><strong>Cellular Connectivity</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Technology</th>
+<th>Price (₹)</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIM800L</td>
+<td>2G GSM</td>
+<td>800-1,200</td>
+<td>SMS/Calls</td>
+</tr>
+<tr>
+<td>SIM7600G</td>
+<td>4G LTE</td>
+<td>2,500-3,500</td>
+<td>Internet access</td>
+</tr>
+<tr>
+<td>SIM7070G</td>
+<td>NB-IoT/CAT-M</td>
+<td>2,000-2,800</td>
+<td>Low-power IoT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sensor-ecosystem"><strong>Sensor Ecosystem</strong></h3>
+<h4 id="environmental-sensors"><strong>Environmental Sensors</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Sensor Type</th>
+<th>Model</th>
+<th>Measurement</th>
+<th>Price (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperature/Humidity</td>
+<td>DHT22</td>
+<td>±0.5°C, ±2-5% RH</td>
+<td>300-500</td>
+</tr>
+<tr>
+<td>Air Quality</td>
+<td>MQ-135</td>
+<td>CO2, NH3, NOx</td>
+<td>200-400</td>
+</tr>
+<tr>
+<td>Pressure</td>
+<td>BMP280</td>
+<td>±1 hPa</td>
+<td>400-600</td>
+</tr>
+<tr>
+<td>Light</td>
+<td>TSL2561</td>
+<td>Lux measurement</td>
+<td>500-800</td>
+</tr>
+</tbody>
+</table>
+<h4 id="motion-position"><strong>Motion &amp; Position</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Sensor Type</th>
+<th>Model</th>
+<th>Capability</th>
+<th>Price (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accelerometer</td>
+<td>ADXL345</td>
+<td>3-axis ±16g</td>
+<td>400-600</td>
+</tr>
+<tr>
+<td>Gyroscope</td>
+<td>MPU6050</td>
+<td>6-axis IMU</td>
+<td>300-500</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>NEO-8M</td>
+<td>Positioning</td>
+<td>1,200-1,800</td>
+</tr>
+<tr>
+<td>Ultrasonic</td>
+<td>HC-SR04</td>
+<td>Distance measurement</td>
+<td>150-300</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="embedded-system-build-examples">🏗️ Embedded System Build Examples</h2>
+<h3 id="iot-weather-station-15000"><strong>IoT Weather Station (₹15,000)</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Purpose: Agricultural monitoring system
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Main Board: Raspberry Pi 4 4GB - ₹6,500
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Storage: 64GB High-Endurance microSD - ₹2,000
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Power: Solar panel + battery system - ₹3,500
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Sensors: Temperature, humidity, pressure - ₹1,200
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Connectivity: 4G LTE module - ₹2,500
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Enclosure: Weatherproof housing - ₹1,500
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Accessories: Cables, mounting - ₹800
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Features:
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- Remote data logging
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>- Solar powered operation
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>- 4G connectivity for remote areas
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>- Weather-resistant design
+</code></pre></div>
+<h3 id="smart-home-automation-hub-25000"><strong>Smart Home Automation Hub (₹25,000)</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Purpose: Comprehensive home automation
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Main Board: Raspberry Pi 5 8GB - ₹9,500
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Storage: 128GB NVMe SSD - ₹8,000
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Display: 7&quot; touchscreen - ₹4,500
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Connectivity: Zigbee + Z-Wave modules - ₹3,500
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Enclosure: Professional case with cooling - ₹2,000
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Accessories: Cables, mounts - ₹1,500
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>Features:
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>- Home Assistant compatible
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>- Local voice processing
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>- Multiple wireless protocols
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>- Touch interface control
+</code></pre></div>
+<h3 id="industrial-edge-ai-system-75000"><strong>Industrial Edge AI System (₹75,000)</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Purpose: Machine vision quality control
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Main Board: NVIDIA Jetson Xavier NX - ₹45,000
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Storage: 256GB NVMe SSD - ₹15,000
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Camera: Industrial USB3 camera - ₹8,000
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Connectivity: Ethernet + WiFi 6 - ₹2,000
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Enclosure: Industrial fanless case - ₹3,500
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>I/O Expansion: GPIO breakout boards - ₹1,500
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>Features:
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>- Real-time AI inference
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>- Industrial temperature range
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>- Multiple camera inputs
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>- Industrial protocols (Modbus, etc.)
+</code></pre></div>
+<h3 id="educational-robotics-platform-35000"><strong>Educational Robotics Platform (₹35,000)</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Purpose: Engineering college robotics lab
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Main Board: Raspberry Pi 4 8GB - ₹7,500
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Compute Module: Arduino Mega 2560 - ₹2,500
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Motors: Servo + stepper motor kit - ₹8,000
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Sensors: Complete sensor package - ₹5,000
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Chassis: Aluminum robot frame - ₹6,000
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Power: Battery pack + charger - ₹3,000
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>Camera: Pi Camera Module 3 - ₹3,000
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>Features:
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>- ROS (Robot Operating System) compatible
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>- Modular sensor integration
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>- Computer vision capabilities
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>- Educational programming support
+</code></pre></div>
+<h3 id="digital-signage-system-45000"><strong>Digital Signage System (₹45,000)</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Purpose: Retail/corporate display management
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Main Board: Intel NUC 13 i5 - ₹65,000
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Storage: 512GB SSD - ₹8,000
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Display: 43&quot; 4K display - ₹25,000
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Connectivity: WiFi 6 + Ethernet - Included
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Management: Remote monitoring - ₹2,000
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>Mounting: VESA mount system - ₹3,000
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>Total: ₹1,03,000 (but scales for multiple units)
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>Features:
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>- 4K content playback
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>- Remote content management
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>- Scheduled content rotation
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>- Multiple display support
+</code></pre></div>
+<hr />
+<h2 id="software-ecosystem">🛠️ Software Ecosystem</h2>
+<h3 id="operating-systems"><strong>Operating Systems</strong></h3>
+<h4 id="raspberry-pi-os"><strong>Raspberry Pi OS</strong></h4>
+<ul>
+<li><strong>Lite</strong>: Minimal command-line interface</li>
+<li><strong>Desktop</strong>: Full GUI environment</li>
+<li><strong>64-bit</strong>: Performance optimization</li>
+<li><strong>Industrial</strong>: Long-term support version</li>
+</ul>
+<h4 id="alternative-linux-distributions"><strong>Alternative Linux Distributions</strong></h4>
+<ul>
+<li><strong>Ubuntu Core</strong>: IoT-focused, snap packages</li>
+<li><strong>DietPi</strong>: Lightweight, optimized builds</li>
+<li><strong>OpenWrt</strong>: Network appliance focus</li>
+<li><strong>Yocto Project</strong>: Custom embedded Linux</li>
+</ul>
+<h4 id="real-time-operating-systems"><strong>Real-Time Operating Systems</strong></h4>
+<ul>
+<li><strong>FreeRTOS</strong>: Microcontroller RTOS</li>
+<li><strong>Zephyr</strong>: Scalable RTOS for IoT</li>
+<li><strong>RT-Thread</strong>: Chinese IoT platform</li>
+<li><strong>Mbed OS</strong>: ARM ecosystem RTOS</li>
+</ul>
+<h3 id="development-tools"><strong>Development Tools</strong></h3>
+<h4 id="programming-languages"><strong>Programming Languages</strong></h4>
+<ul>
+<li><strong>Python</strong>: Rapid prototyping, GPIO control</li>
+<li><strong>C/C++</strong>: Performance-critical applications</li>
+<li><strong>Rust</strong>: Memory-safe systems programming</li>
+<li><strong>JavaScript/Node.js</strong>: IoT web interfaces</li>
+<li><strong>MicroPython</strong>: Microcontroller development</li>
+</ul>
+<h4 id="hardware-interfaces"><strong>Hardware Interfaces</strong></h4>
+<ul>
+<li><strong>GPIO Libraries</strong>: WiringPi, RPi.GPIO, gpiozero</li>
+<li><strong>I2C/SPI</strong>: Communication protocols</li>
+<li><strong>UART</strong>: Serial communication</li>
+<li><strong>PWM</strong>: Motor and LED control</li>
+</ul>
+<h3 id="iot-platforms"><strong>IoT Platforms</strong></h3>
+<h4 id="cloud-platforms"><strong>Cloud Platforms</strong></h4>
+<ul>
+<li><strong>AWS IoT Core</strong>: Amazon cloud integration</li>
+<li><strong>Google Cloud IoT</strong>: Google ecosystem</li>
+<li><strong>Microsoft Azure IoT</strong>: Enterprise focus</li>
+<li><strong>ThingSpeak</strong>: Data logging and analytics</li>
+</ul>
+<h4 id="local-platforms"><strong>Local Platforms</strong></h4>
+<ul>
+<li><strong>Home Assistant</strong>: Home automation</li>
+<li><strong>Node-RED</strong>: Visual programming</li>
+<li><strong>InfluxDB + Grafana</strong>: Time-series data</li>
+<li><strong>MQTT Broker</strong>: Message queuing</li>
+</ul>
+<hr />
+<h2 id="performance-comparisons">📊 Performance Comparisons</h2>
+<h3 id="sbc-performance-benchmarks-2025"><strong>SBC Performance Benchmarks (2025)</strong></h3>
+<h4 id="cpu-performance-geekbench-5"><strong>CPU Performance (Geekbench 5)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Single-Core</th>
+<th>Multi-Core</th>
+<th>Price/Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi 5</td>
+<td>850</td>
+<td>2,100</td>
+<td>Best value</td>
+</tr>
+<tr>
+<td>Orange Pi 5</td>
+<td>1,200</td>
+<td>4,800</td>
+<td>High performance</td>
+</tr>
+<tr>
+<td>NVIDIA Jetson Nano</td>
+<td>650</td>
+<td>1,300</td>
+<td>AI-optimized</td>
+</tr>
+<tr>
+<td>Intel NUC i5</td>
+<td>1,800</td>
+<td>6,500</td>
+<td>x86 compatibility</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ai-inference-performance"><strong>AI Inference Performance</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Framework</th>
+<th>TOPS</th>
+<th>Price/TOPS (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jetson Nano</td>
+<td>TensorRT</td>
+<td>0.5</td>
+<td>30,000</td>
+</tr>
+<tr>
+<td>Jetson Xavier NX</td>
+<td>TensorRT</td>
+<td>21</td>
+<td>2,143</td>
+</tr>
+<tr>
+<td>Raspberry Pi 5</td>
+<td>TensorFlow Lite</td>
+<td>0.1</td>
+<td>90,000</td>
+</tr>
+<tr>
+<td>Orange Pi 5</td>
+<td>RKNN</td>
+<td>6</td>
+<td>2,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="power-efficiency"><strong>Power Efficiency</strong></h3>
+<h4 id="performance-per-watt"><strong>Performance per Watt</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Performance Score</th>
+<th>Power (W)</th>
+<th>Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi Zero 2 W</td>
+<td>400</td>
+<td>2.5</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Raspberry Pi 4</td>
+<td>1,200</td>
+<td>8</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Orange Pi 5</td>
+<td>3,000</td>
+<td>15</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Intel NUC i5</td>
+<td>6,500</td>
+<td>45</td>
+<td>144</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="where-to-buy-in-india">🛒 Where to Buy in India</h2>
+<h3 id="authorized-distributors"><strong>Authorized Distributors</strong></h3>
+<h4 id="raspberry-pi-official"><strong>Raspberry Pi Official</strong></h4>
+<ul>
+<li><strong><a href="https://in.element14.com/raspberry-pi" target="_blank">Element14</a></strong>: Official distributor, warranty support</li>
+<li><strong><a href="https://in.rs-online.com/web/c/raspberry-pi" target="_blank">RS Components</a></strong>: Industrial focus, bulk orders</li>
+<li><strong><a href="https://www.digikey.in/en/products/featured-product-categories/raspberry-pi" target="_blank">Digi-Key</a></strong>: Electronic components, fast shipping</li>
+<li><strong><a href="https://www.mouser.in/Embedded-Solutions/Computing/Single-Board-Computers" target="_blank">Mouser Electronics</a></strong>: Global distributor, local stock</li>
+</ul>
+<h4 id="local-retailers"><strong>Local Retailers</strong></h4>
+<ul>
+<li><strong><a href="https://robokits.co.in" target="_blank">RoboKits India</a></strong>: Educational focus, project kits</li>
+<li><strong><a href="https://robokart.com" target="_blank">Robokart</a></strong>: Maker supplies, sensors, modules</li>
+<li><strong><a href="https://technobotsonline.com" target="_blank">TechnoBots</a></strong>: Robotics components, Arduino ecosystem</li>
+<li><strong><a href="https://crazycircuits.com" target="_blank">Crazy Circuits</a></strong>: DIY electronics, project supplies</li>
+</ul>
+<h3 id="online-marketplaces"><strong>Online Marketplaces</strong></h3>
+<ul>
+<li><strong><a href="https://amazon.in/raspberry-pi" target="_blank">Amazon.in</a></strong>: Wide selection, customer reviews</li>
+<li><strong><a href="https://flipkart.com/raspberry-pi/pr" target="_blank">Flipkart</a></strong>: Competitive pricing, sales events</li>
+<li><strong><a href="https://www.electronicsforyou.in" target="_blank">ElectronicsForYou</a></strong>: Specialized electronics</li>
+<li><strong><a href="https://robu.in" target="_blank">Robu.in</a></strong>: Engineering components, tutorials</li>
+</ul>
+<h3 id="industrial-suppliers"><strong>Industrial Suppliers</strong></h3>
+<ul>
+<li><strong><a href="https://www.advantech.com/en-in" target="_blank">Advantech India</a></strong>: Industrial computing solutions</li>
+<li><strong><a href="https://www.kontron.com/en/country/india" target="_blank">Kontron</a></strong>: Embedded systems, rugged hardware</li>
+<li><strong><a href="https://www.axiomtek.com/en-in" target="_blank">Axiomtek</a></strong>: Factory automation, edge computing</li>
+<li><strong><a href="https://www.ieiworld.com/en/country/india" target="_blank">IEI Integration</a></strong>: Industrial IoT platforms</li>
+</ul>
+<hr />
+<h2 id="common-mistakes-best-practices">⚠️ Common Mistakes &amp; Best Practices</h2>
+<h3 id="hardware-mistakes"><strong>Hardware Mistakes</strong></h3>
+<ol>
+<li><strong>Insufficient Power Supply</strong>: Undervoltage causes instability</li>
+<li><strong>Poor Heat Management</strong>: Thermal throttling in enclosed spaces</li>
+<li><strong>Wrong Storage Type</strong>: Consumer SD cards in industrial applications</li>
+<li><strong>Inadequate Protection</strong>: No surge protection or filtering</li>
+<li><strong>Cable Quality</strong>: Poor cables cause connection issues</li>
+</ol>
+<h3 id="software-mistakes"><strong>Software Mistakes</strong></h3>
+<ol>
+<li><strong>No Backup Strategy</strong>: SD card corruption loses everything</li>
+<li><strong>Security Neglect</strong>: Default passwords, no updates</li>
+<li><strong>Resource Overload</strong>: Running too many services</li>
+<li><strong>No Monitoring</strong>: Silent failures in remote deployments</li>
+<li><strong>Update Management</strong>: Breaking changes in production</li>
+</ol>
+<h3 id="design-best-practices"><strong>Design Best Practices</strong></h3>
+<h4 id="reliability"><strong>Reliability</strong></h4>
+<ul>
+<li>Use industrial-grade components for 24/7 operation</li>
+<li>Implement watchdog timers for automatic recovery</li>
+<li>Design for graceful shutdown on power loss</li>
+<li>Include status indicators and remote monitoring</li>
+</ul>
+<h4 id="security"><strong>Security</strong></h4>
+<ul>
+<li>Change default passwords immediately</li>
+<li>Use VPN for remote access</li>
+<li>Implement certificate-based authentication</li>
+<li>Regular security updates and patches</li>
+</ul>
+<h4 id="scalability"><strong>Scalability</strong></h4>
+<ul>
+<li>Design modular, expandable systems</li>
+<li>Use standard communication protocols</li>
+<li>Document configuration and deployment</li>
+<li>Plan for over-the-air updates</li>
+</ul>
+<hr />
+<h2 id="future-trends-considerations">🎯 Future Trends &amp; Considerations</h2>
+<h3 id="technology-evolution"><strong>Technology Evolution</strong></h3>
+<ul>
+<li><strong>RISC-V Architecture</strong>: Open-source processor designs</li>
+<li><strong>Edge AI Acceleration</strong>: Dedicated neural processing units</li>
+<li><strong>5G Connectivity</strong>: Ultra-low latency applications</li>
+<li><strong>Quantum Sensors</strong>: Enhanced measurement precision</li>
+</ul>
+<h3 id="market-trends-in-india"><strong>Market Trends in India</strong></h3>
+<ul>
+<li><strong>Make in India</strong>: Local manufacturing initiatives</li>
+<li><strong>Smart Cities</strong>: Government IoT deployments</li>
+<li><strong>Agriculture 4.0</strong>: Precision farming adoption</li>
+<li><strong>Industry 4.0</strong>: Factory automation expansion</li>
+</ul>
+<h3 id="emerging-applications"><strong>Emerging Applications</strong></h3>
+<ul>
+<li><strong>Smart Grid</strong>: Energy distribution monitoring</li>
+<li><strong>Autonomous Vehicles</strong>: Edge processing for AVs</li>
+<li><strong>Healthcare IoT</strong>: Remote patient monitoring</li>
+<li><strong>Environmental</strong>: Pollution and climate monitoring</li>
+</ul>
+<hr />
+<h2 id="quick-selection-guide">📋 Quick Selection Guide</h2>
+<h3 id="choose-by-application"><strong>Choose by Application</strong></h3>
+<h4 id="learning-education"><strong>Learning &amp; Education</strong></h4>
+<ul>
+<li><strong>Budget (₹3,000-8,000)</strong>: Raspberry Pi 4 + basic sensors</li>
+<li><strong>Advanced (₹8,000-15,000)</strong>: Pi 5 + comprehensive kit</li>
+</ul>
+<h4 id="home-automation"><strong>Home Automation</strong></h4>
+<ul>
+<li><strong>Basic (₹8,000-15,000)</strong>: Pi 4 + sensor modules</li>
+<li><strong>Professional (₹15,000-30,000)</strong>: Pi 5 + industrial interfaces</li>
+</ul>
+<h4 id="industrial-iot"><strong>Industrial IoT</strong></h4>
+<ul>
+<li><strong>Entry (₹15,000-35,000)</strong>: Industrial SBC + sensors</li>
+<li><strong>Professional (₹35,000-75,000)</strong>: Rugged computer + I/O expansion</li>
+</ul>
+<h4 id="aiml-edge"><strong>AI/ML Edge</strong></h4>
+<ul>
+<li><strong>Development (₹15,000-25,000)</strong>: Jetson Nano</li>
+<li><strong>Production (₹45,000-65,000)</strong>: Jetson Xavier NX</li>
+</ul>
+<h4 id="compact-desktop"><strong>Compact Desktop</strong></h4>
+<ul>
+<li><strong>Basic (₹35,000-55,000)</strong>: Intel NUC i3</li>
+<li><strong>Performance (₹75,000-1,25,000)</strong>: NUC i7 or AMD equivalent</li>
+</ul>
+<hr />
+<p><em>Embedded computing opens up possibilities for specialized applications, IoT development, and space-constrained environments. Choose based on your specific performance, connectivity, and environmental requirements.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CodeTreatise/PC-Build-Guide" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CodeTreatise" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
