@@ -1,11 +1,11 @@
 site_name: PC Build Guide
 site_description: Comprehensive PC Building Guide for Indian Market
-site_author: PC Build Guide Team
-site_url: https://YOUR_USERNAME.github.io/Machine/
+site_author: CodeTreatise
+site_url: https://codetreatise.github.io/PC-Build-Guide/
 
 # Repository
-repo_name: YOUR_USERNAME/Machine
-repo_url: https://github.com/YOUR_USERNAME/Machine
+repo_name: CodeTreatise/PC-Build-Guide
+repo_url: https://github.com/CodeTreatise/PC-Build-Guide
 
 # Configuration
 theme:

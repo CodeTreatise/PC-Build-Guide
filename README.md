@@ -1,9 +1,9 @@
 # 🖥️ PC Build Guide - Complete Component Selection Guide
 
-[![Deploy Status](https://github.com/shivprasad/pc-build-guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/shivprasad/pc-build-guide/actions/workflows/deploy.yml)
-[![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://shivprasad.github.io/pc-build-guide/)
+[![Deploy Status](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml)
+[![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://codetreatise.github.io/PC-Build-Guide/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Indian Market](https://img.shields.io/badge/market-India-orange.svg)](https://shivprasad.github.io/pc-build-guide/)
+[![Indian Market](https://img.shields.io/badge/market-India-orange.svg)](https://codetreatise.github.io/PC-Build-Guide/)
 
 > 🇮🇳 **Comprehensive PC building guide tailored for the Indian hardware market with real-time pricing, compatibility checking, and detailed component analysis**
 
@@ -11,7 +11,7 @@
 
 This project provides a comprehensive resource for PC building enthusiasts in India, covering everything from basic component understanding to advanced workstation builds including AI/ML systems, blockchain rigs, and embedded computing.
 
-**🔗 Live Documentation**: [https://shivprasad.github.io/pc-build-guide/](https://shivprasad.github.io/pc-build-guide/)
+**🔗 Live Documentation**: [https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)
 
 ## 🎯 What Makes This Special
 
@@ -60,14 +60,14 @@ This project provides a comprehensive resource for PC building enthusiasts in In
 ## 🚀 Quick Start
 
 ### For Users (View Documentation)
-Visit the live documentation: **[https://shivprasad.github.io/pc-build-guide/](https://shivprasad.github.io/pc-build-guide/)**
+Visit the live documentation: **[https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)**
 
 ### For Developers (Run Locally)
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/shivprasad/pc-build-guide.git
-cd pc-build-guide
+git clone https://github.com/CodeTreatise/PC-Build-Guide.git
+cd PC-Build-Guide
 ```
 
 2. **Set up Python environment**
@@ -179,9 +179,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/shivprasad/pc-build-guide/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/shivprasad/pc-build-guide/discussions)
-- 📧 **Email**: [Contact via GitHub](https://github.com/shivprasad)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/CodeTreatise/PC-Build-Guide/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/CodeTreatise/PC-Build-Guide/discussions)
+- 📧 **Email**: [Contact via GitHub](https://github.com/CodeTreatise)
 
 ---
 
