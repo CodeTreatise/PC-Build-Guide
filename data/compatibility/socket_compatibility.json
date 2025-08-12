@@ -1,0 +1,28 @@
+{
+  "intel_lga1700": {
+    "compatible_cpus": [
+      "12th Gen Intel",
+      "13th Gen Intel",
+      "14th Gen Intel"
+    ],
+    "compatible_memory": [
+      "DDR4",
+      "DDR5"
+    ],
+    "compatible_coolers": [
+      "LGA1700 mount required"
+    ]
+  },
+  "amd_am5": {
+    "compatible_cpus": [
+      "Ryzen 7000 series",
+      "Ryzen 8000 series"
+    ],
+    "compatible_memory": [
+      "DDR5 only"
+    ],
+    "compatible_coolers": [
+      "AM5 mount or AM4 with adapter"
+    ]
+  }
+}

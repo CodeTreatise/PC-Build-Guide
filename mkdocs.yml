@@ -1,0 +1,115 @@
+site_name: PC Build Guide
+site_description: Comprehensive PC Building Guide for Indian Market
+site_author: PC Build Guide Team
+site_url: https://YOUR_USERNAME.github.io/Machine/
+
+# Repository
+repo_name: YOUR_USERNAME/Machine
+repo_url: https://github.com/YOUR_USERNAME/Machine
+
+# Configuration
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Navigation
+nav:
+  - Home: index.md
+  - Component Guides:
+    - Motherboard: guides/motherboard-guide.md
+    - Processor (CPU): guides/cpu-guide.md
+    - Graphics Card (GPU): guides/gpu-guide.md
+    - Memory (RAM): guides/ram-guide.md
+    - Storage: guides/storage-guide.md
+    - Power Supply: guides/psu-guide.md
+    - PC Case: guides/case-guide.md
+    - Cooling: guides/cooling-guide.md
+    - Monitors: guides/monitor-guide.md
+    - Keyboards & Mice: guides/peripherals-guide.md
+    - AI/ML Builds: guides/ai-ml-guide.md
+    - Blockchain & Crypto: guides/blockchain-guide.md
+    - Embedded & Mini PCs: guides/embedded-guide.md
+  - Build Guides:
+    - Complete Build Recommendations: builds/budget-builds.md
+  - Assembly & Setup:
+    - Step-by-Step Build Guide: assembly/build-guide.md
+  - Reference & Learning:
+    - Component Compatibility: compatibility/compatibility-matrix.md
+    - Frequently Asked Questions: learning/faq.md
+    - PC Building Terminology: learning/terminology.md
+  - Troubleshooting:
+    - Common Issues & Solutions: troubleshooting/common-issues.md
+  - External References:
+    - Advanced Learning Resources: external/advanced-resources.md
+    - Video Tutorials & Channels: external/video-tutorials.md
+    - Technical Articles & Research: external/technical-articles.md
+    - Communities & Forums: external/communities.md
+    - Professional Reviews & Benchmarks: external/review-sites.md
+
+# Plugins
+plugins:
+  - search
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Extra JavaScript
+extra_javascript:
+  - javascripts/extra.js
+
+# Social links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pc-build-guide
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/pcbuildguide
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/pcbuildguide

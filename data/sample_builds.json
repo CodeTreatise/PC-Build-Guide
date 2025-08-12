@@ -1,0 +1,32 @@
+{
+  "budget_gaming": {
+    "budget": 60000,
+    "use_case": "budget_gaming",
+    "target_resolution": "1080p",
+    "target_fps": 60,
+    "components": {
+      "cpu": "AMD Ryzen 5 5600",
+      "gpu": "NVIDIA RTX 4060",
+      "motherboard": "MSI B550M Pro-B",
+      "ram": "16GB DDR4-3200",
+      "storage": "500GB NVMe SSD",
+      "psu": "650W 80+ Bronze",
+      "case": "Cooler Master MasterBox Q300L"
+    }
+  },
+  "mid_range_gaming": {
+    "budget": 120000,
+    "use_case": "mid_range_gaming",
+    "target_resolution": "1440p",
+    "target_fps": 60,
+    "components": {
+      "cpu": "AMD Ryzen 7 7700X",
+      "gpu": "NVIDIA RTX 4070",
+      "motherboard": "ASUS TUF Gaming B650-Plus",
+      "ram": "32GB DDR5-5600",
+      "storage": "1TB NVMe SSD",
+      "psu": "750W 80+ Gold Modular",
+      "case": "Fractal Design Core 1000"
+    }
+  }
+}
