@@ -1,17 +1,17 @@
 # 🖥️ PC Build Guide - Complete Component Selection Guide
 
 [![Deploy Status](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml)
-[![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://codetreatise.github.io/PC-Build-Guide/)
+<a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/docs-mkdocs-blue.svg" alt="Documentation"></a>
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Indian Market](https://img.shields.io/badge/market-India-orange.svg)](https://codetreatise.github.io/PC-Build-Guide/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg)](https://codetreatise.github.io/PC-Build-Guide/)
+<a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/market-India-orange.svg" alt="Indian Market"></a>
+<a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg" alt="GitHub Pages"></a>
 
 > 🇮🇳 **Comprehensive PC building guide tailored for the Indian hardware market with real-time pricing, compatibility checking, and detailed component analysis**
 
 ## 🌐 **Live Documentation Website**
 
 ### **📖 Access the Complete Guide:**
-**🔗 [https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)**
+**🔗 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank">https://codetreatise.github.io/PC-Build-Guide/</a>**
 
 *Click the link above to access the full interactive documentation with all guides, build recommendations, and learning resources.*
 
@@ -70,7 +70,7 @@ This project provides a comprehensive resource for PC building enthusiasts in In
 ## 🚀 Quick Start
 
 ### For Users (View Documentation)
-Visit the live documentation: **[https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)**
+Visit the live documentation: **<a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank">https://codetreatise.github.io/PC-Build-Guide/</a>**
 
 ### For Developers (Run Locally)
 

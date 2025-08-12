@@ -15,7 +15,7 @@ topics:
 
 This repository's documentation is deployed and accessible at:
 
-**🔗 [https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)**
+**🔗 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank">https://codetreatise.github.io/PC-Build-Guide/</a>**
 
 ## What's Available:
 
