@@ -10,9 +10,10 @@ on:
 
 # Set permissions for GitHub Pages deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+  actions: read
 
 jobs:
   # Build and deploy documentation
@@ -21,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
         
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,8 +48,11 @@ jobs:
           mkdocs build --clean --strict
           
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy PC Build Guide documentation'
