@@ -4,8 +4,18 @@
 [![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://codetreatise.github.io/PC-Build-Guide/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Indian Market](https://img.shields.io/badge/market-India-orange.svg)](https://codetreatise.github.io/PC-Build-Guide/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg)](https://codetreatise.github.io/PC-Build-Guide/)
 
 > 🇮🇳 **Comprehensive PC building guide tailored for the Indian hardware market with real-time pricing, compatibility checking, and detailed component analysis**
+
+## 🌐 **Live Documentation Website**
+
+### **📖 Access the Complete Guide:**
+**🔗 [https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)**
+
+*Click the link above to access the full interactive documentation with all guides, build recommendations, and learning resources.*
+
+---
 
 ## 🌟 Project Overview
 
