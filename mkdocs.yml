@@ -96,20 +96,10 @@ nav:
 plugins:
   - search
 
-# Extra CSS
-extra_css:
-  - stylesheets/extra.css
-
-# Extra JavaScript
-extra_javascript:
-  - javascripts/extra.js
-
 # Social links
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/pc-build-guide
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/pcbuildguide
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/pcbuildguide
+      link: https://github.com/CodeTreatise/PC-Build-Guide
+    - icon: fontawesome/brands/github
+      link: https://github.com/CodeTreatise
