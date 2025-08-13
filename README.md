@@ -1,6 +1,8 @@
 # 🖥️ PC Build Guide - Complete Component Selection Guide
 
 [![Deploy Status](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml)
+<a href="https://github.com/CodeTreatise/PC-Build-Guide/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/CodeTreatise/PC-Build-Guide.svg?style=social" alt="GitHub stars"></a>
+<a href="https://github.com/CodeTreatise/PC-Build-Guide/network/members" target="_blank"><img src="https://img.shields.io/github/forks/CodeTreatise/PC-Build-Guide.svg?style=social" alt="GitHub forks"></a>
 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/docs-mkdocs-blue.svg" alt="Documentation"></a>
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/market-India-orange.svg" alt="Indian Market"></a>
