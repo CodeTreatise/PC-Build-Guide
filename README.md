@@ -1,10 +1,10 @@
 # 🖥️ PC Build Guide - Complete Component Selection Guide
 
-[![Deploy Status](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml)
+<a href="https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml" target="_blank"><img src="https://github.com/CodeTreatise/PC-Build-Guide/actions/workflows/deploy.yml/badge.svg" alt="Deploy Status"></a>
 <a href="https://github.com/CodeTreatise/PC-Build-Guide/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/CodeTreatise/PC-Build-Guide.svg?style=social" alt="GitHub stars"></a>
 <a href="https://github.com/CodeTreatise/PC-Build-Guide/network/members" target="_blank"><img src="https://img.shields.io/github/forks/CodeTreatise/PC-Build-Guide.svg?style=social" alt="GitHub forks"></a>
 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/docs-mkdocs-blue.svg" alt="Documentation"></a>
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+<a href="https://github.com/CodeTreatise/PC-Build-Guide/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/market-India-orange.svg" alt="Indian Market"></a>
 <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank"><img src="https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg" alt="GitHub Pages"></a>
 
@@ -23,7 +23,7 @@
 
 This project provides a comprehensive resource for PC building enthusiasts in India, covering everything from basic component understanding to advanced workstation builds including AI/ML systems, blockchain rigs, and embedded computing.
 
-**🔗 Live Documentation**: [https://codetreatise.github.io/PC-Build-Guide/](https://codetreatise.github.io/PC-Build-Guide/)
+**🔗 Live Documentation**: <a href="https://codetreatise.github.io/PC-Build-Guide/" target="_blank">https://codetreatise.github.io/PC-Build-Guide/</a>
 
 ## 🎯 What Makes This Special
 
@@ -191,9 +191,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/CodeTreatise/PC-Build-Guide/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/CodeTreatise/PC-Build-Guide/discussions)
-- 📧 **Email**: [Contact via GitHub](https://github.com/CodeTreatise)
+- 🐛 **Issues**: <a href="https://github.com/CodeTreatise/PC-Build-Guide/issues" target="_blank">GitHub Issues</a>
+- 💬 **Discussions**: <a href="https://github.com/CodeTreatise/PC-Build-Guide/discussions" target="_blank">GitHub Discussions</a>
+- 📧 **Email**: <a href="https://github.com/CodeTreatise" target="_blank">Contact via GitHub</a>
 
 ---
 
